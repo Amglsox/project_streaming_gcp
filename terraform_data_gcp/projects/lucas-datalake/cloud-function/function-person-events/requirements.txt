@@ -1,0 +1,5 @@
+pandas
+Faker
+google-cloud-pubsub
+simplejson
+google-cloud-storage

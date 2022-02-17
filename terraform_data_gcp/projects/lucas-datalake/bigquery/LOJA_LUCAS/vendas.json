@@ -1,0 +1,94 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "pais",
+    "type": "STRING"
+  },
+  {
+    "description": "bq-datetime",
+    "mode": "NULLABLE",
+    "name": "dtCompra",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "produtoDescricao",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "idProduto",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "idCompra",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "precoUnitario",
+    "type": "FLOAT"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "nome",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "cidade",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "bairro",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "qtCompra",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "logradouro",
+    "type": "STRING"
+  },
+  {
+    "description": "%E4Y-%m-%d",
+    "mode": "NULLABLE",
+    "name": "dtNascimento",
+    "type": "DATE"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "profissao",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "estado",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "enderecoCompleto",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "cpf",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "empresa",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "cep",
+    "type": "INTEGER"
+  }
+]
