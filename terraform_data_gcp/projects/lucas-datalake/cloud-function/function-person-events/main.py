@@ -22,7 +22,7 @@ def execute(request):
     i = 0
     project = os.environ.get("PROJECT_ID",'lucas-datalake-dev')
     TOPIC = os.environ.get("TOPIC",'lucas-person-events')
-    while i<=10000:
+    while i<=1000:
         try:    
             dfProdutos = pd.read_csv('produtos.csv', sep=';')
             idRandomCompra = sha256((str(uuid.uuid4()) + 
