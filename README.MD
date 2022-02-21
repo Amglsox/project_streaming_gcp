@@ -2,21 +2,6 @@
 # Loja Faker
 O projeto tem como objetivo simular um ambiente de processamento de dados em near-realtime utilizando os principais serviços da Google Cloud(GCP).
 
-# Arquitetura
-
-A arquitetura utilizada neste projeto foi simulando vendas de produtos Fake de uma Loja e sendo feito uma analise em tempo real utilizando o Data Studio como ferramenta de visualização de dados.
-O fluxo inicia pelo Cloud Scheduler que a cada 1 minuto realiza uma chamada HTTP Post, a Function que processa e publica as mensagens dentro de um tópico do produto Cloud Pub/Sub.
-Após a publicação das mensagens ao tópico um Job DataFlow, utilizando os [templates](https://cloud.google.com/dataflow/docs/guides/templates/provided-streaming#cloudpubsubsubscriptiontobigquery) já disponíveis pela Google, processa e armazena os dados dentro do BigQuery. 
-
-
-![alt text](infra_streaming.png "Title")
-
-# Dashboard
-
-Dashboard criado para explorar dados em tempo real das vendas da Loja Faker.
-![alt text](dashboard.png "Dashboard Loja Faker")
-[Link do Dashboard no Data Studio](https://datastudio.google.com/u/1/reporting/40e732ed-260f-4671-b4d7-b22a8df4ae5e/page/84wlC)
- 
 ## Requisitos/Conhecimentos:
 - [Free Tier GCP](https://cloud.google.com/)
 - [Python 3.x](https://www.python.org/)
@@ -28,6 +13,19 @@ Dashboard criado para explorar dados em tempo real das vendas da Loja Faker.
 - [Cloud Function](https://cloud.google.com/functions/docs/quickstart-console)
 - [Data Flow](https://cloud.google.com/dataflow/docs)
 
+# Arquitetura
+A arquitetura utilizada neste projeto foi simulando vendas de produtos Fake de uma Loja e sendo feito uma analise em tempo real utilizando o Data Studio como ferramenta de visualização de dados.
+O fluxo inicia pelo Cloud Scheduler que a cada 1 minuto realiza uma chamada HTTP Post, a Function que processa e publica as mensagens dentro de um tópico do produto Cloud Pub/Sub.
+Após a publicação das mensagens ao tópico um Job DataFlow, utilizando os [templates](https://cloud.google.com/dataflow/docs/guides/templates/provided-streaming#cloudpubsubsubscriptiontobigquery) já disponíveis pela Google, processa e armazena os dados dentro do BigQuery. 
+
+
+![alt text](infra_streaming.png "Title")
+
+# Dashboard
+Dashboard criado para explorar dados em tempo real das vendas da Loja Faker.
+![alt text](dashboard.png "Dashboard Loja Faker")
+[Link do Dashboard no Data Studio](https://datastudio.google.com/u/1/reporting/40e732ed-260f-4671-b4d7-b22a8df4ae5e/page/84wlC)
+ 
 ## IaC - Infrastructure as Code
 Para a criação de todos os recursos deste projeto foi utilizado a ferramenta de gerenciamento de infraestrutura como código, Terraform, para facilitar a criação dos recursos.
 
