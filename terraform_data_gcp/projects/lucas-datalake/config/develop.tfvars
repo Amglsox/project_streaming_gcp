@@ -1,3 +1,3 @@
 region               = "US"
-project              = "lucas-datalake-dev"
+project              = "project_id"
 env                  = "dev"

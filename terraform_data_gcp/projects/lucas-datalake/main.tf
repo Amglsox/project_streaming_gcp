@@ -117,5 +117,5 @@ module "scheduler-person-events"{
    url = "${module.function-person-events.https_trigger_url}"
    body="Hello"
    audience = "${module.function-person-events.https_trigger_url}"
-   service_account = "lucas-datalake-dev@appspot.gserviceaccount.com"
+   service_account = "${var.project}appspot.gserviceaccount.com"
 } 
