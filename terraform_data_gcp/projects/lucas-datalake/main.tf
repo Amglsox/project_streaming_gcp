@@ -89,7 +89,7 @@ module "function-person-events"{
     name   = "function-person-events"
     description = "Cloud function resposnável por receber os eventos de pessoas fake"
     available_memory_mb = 1024
-    timeout_s = "200"
+    timeout_s = "540"
     entry_point = "execute"
     ingress_settings = "ALLOW_ALL"
     trigger_http = true

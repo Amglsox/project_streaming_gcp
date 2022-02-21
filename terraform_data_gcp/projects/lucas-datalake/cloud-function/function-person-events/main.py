@@ -22,7 +22,7 @@ def execute(request):
     i = 0
     project = os.environ.get("PROJECT_ID",'lucas-datalake-dev')
     TOPIC = os.environ.get("TOPIC",'lucas-person-events')
-    while i<=1000:
+    while i<=500:
         try:    
             dfProdutos = pd.read_csv('produtos.csv', sep=';')
             idRandomCompra = sha256((str(uuid.uuid4()) + 
@@ -56,6 +56,9 @@ def execute(request):
                     }
             pub_sub.publish_message_datalake(topic_name=TOPIC, 
                                         message=person
-                                        )   
+                                        )
+            i = i +1
         except Exception as ex:
             print(ex)
+    return 'OK'
+        
