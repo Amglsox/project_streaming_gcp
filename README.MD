@@ -74,9 +74,9 @@ terraform destroy -var-file=config/develop.tfvars; Comando é uma maneira conven
     * CHANGE: Commit project
 
 ## Developer
-Lucas Mari – [@LHRM97](https://twitter.com/LHRM97) – lucashrm97@gmail.com
+Lucas Mari
 
-https://github.com/Amglsox](https://github.com/Amglsox/)
+[https://github.com/Amglsox](https://github.com/Amglsox/)
 
 
 <!-- Markdown link & img dfn's -->
